@@ -14,17 +14,14 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
-        // Garante que o NavController seja recuperado corretamente
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment?
 
         if (navHostFragment != null) {
             val navController = navHostFragment.navController
 
-            // Configura o BottomNavigationView para funcionar com o NavController
             setupWithNavController(bottomNavigationView, navController)
 
-            // Configura a navegação personalizada
             bottomNavigationView.setOnItemSelectedListener { item: MenuItem ->
                 val itemId = item.itemId
                 val currentDestination =

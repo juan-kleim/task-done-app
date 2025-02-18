@@ -16,10 +16,8 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // Obtém o botão pelo ID
         val btnGoToTasks = view.findViewById<Button>(R.id.btn_minhas_tarefas)
 
-        // Configura o listener do botão
         btnGoToTasks.setOnClickListener { v: View? ->
             val navController = findNavController(view)
             navController.navigate(R.id.tasksFragment)
@@ -31,7 +29,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Habilita o botão de voltar no NavController
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
