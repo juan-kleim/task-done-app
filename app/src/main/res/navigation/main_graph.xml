@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.apptaskdone.HomeFragment"
+        android:name="com.juanpacheco.apptaskdone.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/userFragment"
-        android:name="com.example.apptaskdone.UserFragment"
+        android:name="com.juanpacheco.apptaskdone.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.apptaskdone.SettingsFragment"
+        android:name="com.juanpacheco.apptaskdone.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/tasksFragment"
-        android:name="com.example.apptaskdone.TasksFragment"
+        android:name="com.juanpacheco.apptaskdone.TasksFragment"
         android:label="fragment_tasks"
         tools:layout="@layout/fragment_tasks" />
 </navigation>

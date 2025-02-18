@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.apptaskdone"
+    namespace = "com.juanpacheco.apptaskdone"
     compileSdk = 35
 
     defaultConfig {
