@@ -1,15 +1,21 @@
 *.iml
-.gradle
-/local.properties
+/.idea/
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+# Arquivos do macOS
 .DS_Store
-/build
+
+.gradle/
+/gradlew.log
+/local.properties
+
+/build/
+/app/build/outputs/
 /captures
 .externalNativeBuild
 .cxx
-local.properties
