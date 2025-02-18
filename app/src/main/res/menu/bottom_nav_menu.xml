@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home_svgrepo"
+        android:id="@+id/homeFragment"
+        android:title="Home" />
+    <item
+        android:icon="@drawable/ic_user_svgrepo"
+        android:id="@+id/userFragment"
+        android:title="User" />
+    <item
+        android:icon="@drawable/ic_settings_svgrepo"
+        android:id="@+id/settingsFragment"
+        android:title="Settings" />
+</menu>
