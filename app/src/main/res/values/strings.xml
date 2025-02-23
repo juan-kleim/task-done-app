@@ -2,11 +2,11 @@
 
     <!-- Textos do fragment home -->
     <string name="app_name">AppTaskDone</string>
-        <string name="tv_titulo_home">Bem-vindo à Home!</string>
-        <string name="tv_bem_vindo_ao"> Bem vindo ao</string>
-        <string name="tv_task_done"> App Task Done</string>
-        <string name="tv_tudosobre"> Tudo sobre suas tarefas em um só lugar. </string>
-        <string name="btn_minhas_tarefas"> Minhas tarefas</string>
+    <string name="tv_titulo_home">Bem-vindo à Home!</string>
+    <string name="tv_bem_vindo_ao"> Bem vindo ao</string>
+    <string name="tv_task_done"> App Task Done</string>
+    <string name="tv_tudosobre"> Tudo sobre suas tarefas em um só lugar. </string>
+    <string name="btn_minhas_tarefas"> Minhas tarefas</string>
 
     <!-- Textos do fragment de tasks -->
     <string name="tv_tarefas"> Minhas tarefas</string>
