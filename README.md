@@ -24,7 +24,7 @@ O **Task Done App** tem como objetivo ajudar os usuários a se organizarem atrav
 ## 📂 Como Executar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/task-done-app.git
+   git clone https://github.com/juan-kleim/task-done-app.git
    ```
 2. Abra o projeto no **Android Studio**.
 3. Compile e execute no emulador ou dispositivo físico.
