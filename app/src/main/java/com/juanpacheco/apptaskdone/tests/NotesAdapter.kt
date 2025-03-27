@@ -36,14 +36,12 @@ class NotesAdapter(
 
     }
 
-    // Ao vincular o View Holder
     override fun onBindViewHolder(holder: NotesViewHolder, position: Int) {
 
         val notes = lista[position]
         holder.textTitulo.text = notes.titulo
         holder.textDescricao.text = notes.descricao
         holder.textData.text = notes.data
-
 
     }
 
