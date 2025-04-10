@@ -1,7 +1,7 @@
 # 📌 Task Done App
 
 ## 📖 Sobre o Projeto
-O **Task Done App** tem como objetivo ajudar os usuários a se organizarem através de tarefas. Atualmente, o app está em desenvolvimento e permitirá a criação de listas de tarefas, armazenadas em arquivos `.txt`, possibilitando que o usuário trabalhe nelas dentro do aplicativo.
+O **Task Done App** tem como objetivo ajudar os usuários a se organizarem através de tarefas. Atualmente, o app está em desenvolvimento e permitirá a criação de listas de tarefas, armazenadas em arquivos internos, possibilitando que o usuário trabalhe nelas dentro do aplicativo. O projeto está sendo desenvolvido enquanto estudo sobre desenvolvimento Android, misturando tecnologias mais antigas e outras atuais.
 
 🚧 **Este projeto ainda é um protótipo** e servirá como base para um app futuro com mais funcionalidades e ideias aprimoradas.
 
@@ -24,7 +24,7 @@ O **Task Done App** tem como objetivo ajudar os usuários a se organizarem atrav
 ## 📂 Como Executar o Projeto
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/task-done-app.git
+   git clone https://github.com/juan-kleim/task-done-app.git
    ```
 2. Abra o projeto no **Android Studio**.
 3. Compile e execute no emulador ou dispositivo físico.
