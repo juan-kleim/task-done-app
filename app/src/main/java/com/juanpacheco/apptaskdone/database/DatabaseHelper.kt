@@ -14,7 +14,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
         private const val NOME_BANCO_DADOS = "TaskDone.db"
         const val TABELA_TAREFAS = "tarefas"
 
-        //Colunas tabela tarefas
         const val ID_TAREFA = "id_tarefa"
         const val DESCRICAO = "descricao"
         const val DATA_CRIACAO = "data_criacao"

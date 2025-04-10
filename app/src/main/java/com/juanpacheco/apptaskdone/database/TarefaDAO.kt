@@ -11,18 +11,14 @@ class TarefaDAO(context: Context) : ITarefaDAO {
     override fun salvar(tarefa: Tarefa): Boolean {
 
         try {
-
         }catch (e: Exception){
-
             return false
         }
         return true
     }
 
     override fun atualizar(tarefa: Tarefa): Boolean {
-
         try {
-
         }catch (e: Exception){
             return false
         }
@@ -30,9 +26,7 @@ class TarefaDAO(context: Context) : ITarefaDAO {
     }
 
     override fun deletar(id: Int): Boolean {
-
         try {
-
         }catch (e: Exception){
             return false
         }
@@ -40,9 +34,7 @@ class TarefaDAO(context: Context) : ITarefaDAO {
     }
 
     override fun listar(): List<Tarefa> {
-
         val listaTarefas = mutableListOf<Tarefa>()
-
         return listaTarefas
     }
 
