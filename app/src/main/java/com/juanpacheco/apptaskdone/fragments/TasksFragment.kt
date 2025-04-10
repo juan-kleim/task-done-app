@@ -1,12 +1,14 @@
-package com.juanpacheco.apptaskdone
+package com.juanpacheco.apptaskdone.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.juanpacheco.apptaskdone.R
 
 class TasksFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

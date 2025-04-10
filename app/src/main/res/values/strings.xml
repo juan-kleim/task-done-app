@@ -10,6 +10,8 @@
 
     <!-- Textos do fragment de tasks -->
     <string name="tv_tarefas"> Minhas tarefas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
