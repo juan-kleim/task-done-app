@@ -13,9 +13,6 @@
         android:theme="@style/Theme.AppTaskDone"
         tools:targetApi="31">
         <activity
-            android:name=".AdicionarTarefaActivity"
-            android:exported="false" />
-        <activity
             android:name=".tests.RecyclerViewActivity"
             android:exported="false" />
         <activity
