@@ -31,5 +31,8 @@ class TasksFragment : Fragment() {
             findNavController().navigate(R.id.addTaskFragment)
         }
 
+        //RecyclerView
+        binding.rvTarefas
+
     }
 }
