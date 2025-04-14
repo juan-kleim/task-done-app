@@ -1,6 +1,7 @@
 package com.juanpacheco.apptaskdone.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,12 +10,16 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.juanpacheco.apptaskdone.R
+import com.juanpacheco.apptaskdone.database.TarefaDAO
 import com.juanpacheco.apptaskdone.databinding.FragmentHomeBinding
+import com.juanpacheco.apptaskdone.model.Tarefa
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+
+    private var listaTarefas = emptyList<Tarefa>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,12 +27,13 @@ class HomeFragment : Fragment() {
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnMinhasTarefas.setOnClickListener{
+        binding.btnMinhasTarefas.setOnClickListener {
             findNavController().navigate(R.id.tasksFragment)
         }
 
@@ -40,6 +46,17 @@ class HomeFragment : Fragment() {
                 }
             })
     }
+
+    override fun onStart() {
+        super.onStart()
+        val tarefaDAO = TarefaDAO(requireContext())
+        listaTarefas = tarefaDAO.listar()
+
+        listaTarefas.forEach { tarefa ->
+            Log.i("info_db", tarefa.descricao)
+        }
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
