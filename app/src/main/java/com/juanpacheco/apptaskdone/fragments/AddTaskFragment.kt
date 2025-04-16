@@ -35,14 +35,18 @@ class AddTaskFragment : Fragment() {
 //        }
 //    }
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         _binding = FragmentAddTaskBinding.inflate(inflater, container, false)
         binding.btnSalvarAddTasks.setOnClickListener{
 
             if( binding.editTarefaTasks.text.isNotEmpty() ){
+
                 val descricao = binding.editTarefaTasks.text.toString()
                 val tarefa = Tarefa(
                     -1, descricao, "default"
@@ -62,7 +66,6 @@ class AddTaskFragment : Fragment() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
-
         }
 
         return binding.root
