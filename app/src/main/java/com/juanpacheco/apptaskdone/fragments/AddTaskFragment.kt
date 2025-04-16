@@ -1,10 +1,12 @@
 package com.juanpacheco.apptaskdone.fragments
 
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.juanpacheco.apptaskdone.database.TarefaDAO
@@ -18,7 +20,6 @@ import com.juanpacheco.apptaskdone.model.Tarefa
  */
 
 class AddTaskFragment : Fragment() {
-
     private var _binding: FragmentAddTaskBinding? = null
     private val binding get() = _binding!!
 
@@ -35,42 +36,50 @@ class AddTaskFragment : Fragment() {
 //        }
 //    }
 
-
-
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         _binding = FragmentAddTaskBinding.inflate(inflater, container, false)
-        binding.btnSalvarAddTasks.setOnClickListener{
+        val binding = _binding!!
 
-            if( binding.editTarefaTasks.text.isNotEmpty() ){
+        val tarefaRecebida: Tarefa? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            arguments?.getSerializable("tarefa", Tarefa::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            arguments?.getSerializable("tarefa") as? Tarefa
+        }
 
-                val descricao = binding.editTarefaTasks.text.toString()
-                val tarefa = Tarefa(
-                    -1, descricao, "default"
-                )
+        tarefaRecebida?.let { tarefa ->
+            binding.editTarefaTasks.setText(tarefa.descricao)
+        }
+
+        binding.btnSalvarAddTasks.setOnClickListener {
+            val descricao = binding.editTarefaTasks.text.toString()
+
+            if (descricao.isNotEmpty()) {
                 val tarefaDAO = TarefaDAO(requireContext())
-                if ( tarefaDAO.salvar(tarefa) ) {
-                    Toast.makeText(requireContext(), "Tarefa cadastrada com sucesso",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    findNavController().popBackStack()
+
+                if (tarefaRecebida != null) {
+                    val tarefaAtualizada = tarefaRecebida.copy(descricao = descricao)
+                    tarefaDAO.atualizar(tarefaAtualizada)
+                    Toast.makeText(requireContext(), "Tarefa atualizada com sucesso", Toast.LENGTH_SHORT).show()
+                } else {
+                    val novaTarefa = Tarefa(-1, descricao, "default")
+                    tarefaDAO.salvar(novaTarefa)
+                    Toast.makeText(requireContext(), "Tarefa adicionada com sucesso", Toast.LENGTH_SHORT).show()
                 }
 
-            }else{
-                Toast.makeText(
-                    requireContext(),
-                    "Preencha uma tarefa",
-                    Toast.LENGTH_SHORT
-                ).show()
+                findNavController().popBackStack()
+
+            } else {
+                Toast.makeText(requireContext(), "Preencha uma tarefa", Toast.LENGTH_SHORT).show()
             }
         }
 
         return binding.root
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

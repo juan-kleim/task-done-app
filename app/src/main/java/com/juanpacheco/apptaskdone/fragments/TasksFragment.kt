@@ -1,7 +1,7 @@
 package com.juanpacheco.apptaskdone.fragments
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -45,11 +45,18 @@ class TasksFragment : Fragment() {
 
         //RecyclerView
         tarefaAdapter = TarefaAdapter(
-            {id -> confirmarExclusao(id)}
+            {id -> confirmarExclusao(id)},
+            {tarefa -> editar(tarefa)}
         )
         binding.rvTarefas.adapter = tarefaAdapter
 
         binding.rvTarefas.layoutManager = LinearLayoutManager(requireContext())
+    }
+
+    private fun editar(tarefa: Tarefa) {
+        val bundle = Bundle()
+        bundle.putSerializable("tarefa", tarefa)
+        findNavController().navigate(R.id.addTaskFragment, bundle)
     }
 
     private fun confirmarExclusao(id: Int) {

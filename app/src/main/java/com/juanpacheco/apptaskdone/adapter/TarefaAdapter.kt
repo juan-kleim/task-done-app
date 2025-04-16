@@ -7,7 +7,8 @@ import com.juanpacheco.apptaskdone.databinding.ItemTarefaBinding
 import com.juanpacheco.apptaskdone.model.Tarefa
 
 class TarefaAdapter(
-    val onClickExcluir: (Int) -> Unit
+    val onClickExcluir: (Int) -> Unit,
+    val onClickEditar: (Tarefa) -> Unit
 ) : RecyclerView.Adapter<TarefaAdapter.TarefaViewHolder>() {
 
     private var listaTarefas: MutableList<Tarefa> = mutableListOf()
@@ -33,6 +34,10 @@ class TarefaAdapter(
 
             binding.btnExcluir.setOnClickListener{
                 onClickExcluir(tarefa.idTarefa)
+            }
+
+            binding.btnEditar.setOnClickListener{
+                onClickEditar( tarefa )
             }
 
 
