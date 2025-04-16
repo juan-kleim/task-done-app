@@ -1,7 +1,7 @@
 # 📌 Task Done App
 
 ## 📖 Sobre o Projeto
-O **Task Done App** tem como objetivo ajudar os usuários a se organizarem criando tarefas. Atualmente, o app está em desenvolvimento e permitirá a criação de listas de tarefas, possibilitando que o usuário trabalhe nelas dentro do aplicativo. O projeto está sendo desenvolvido enquanto estudo sobre desenvolvimento Android, misturando tecnologias mais antigas e outras atuais.
+O **Task Done App** tem como objetivo ajudar os usuários a se organizarem por meio da criação e gerenciamento de tarefas. Atualmente em desenvolvimento, o aplicativo permitirá que o usuário crie tarefas, visualize em uma lista, edite e exclua conforme necessário. Este projeto está sendo desenvolvido como parte dos meus estudos em desenvolvimento Android, combinando o uso de tecnologias mais antigas com recursos mais modernos da plataforma.
 
 🚧 **Este projeto ainda é um protótipo** e servirá como base para um app futuro com mais funcionalidades e ideias aprimoradas.
 
