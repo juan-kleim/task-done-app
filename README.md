@@ -20,6 +20,7 @@ O **Task Done App** tem como objetivo ajudar os usuários a se organizarem por m
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagens**: Java, Kotlin
 - **Interface**: Jetpack Compose
+- **Armazenamento:** SQLite
 
 ## 📌 Status do Projeto
 🚀 Em desenvolvimento — funcionalidades básicas finalizadas.
