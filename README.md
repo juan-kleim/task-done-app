@@ -1,5 +1,7 @@
 # 📌 Task Done App
 
+![taskdoneImg](https://github.com/user-attachments/assets/208477e9-ca7f-4aca-8d09-ec057e498417)
+
 ## 📖 Sobre o Projeto
 O **Task Done App** tem como objetivo ajudar os usuários a se organizarem por meio da criação e gerenciamento de tarefas. Atualmente em desenvolvimento, o aplicativo permitirá que o usuário crie tarefas, visualize em uma lista, edite e exclua conforme necessário. Este projeto está sendo desenvolvido como parte dos meus estudos em desenvolvimento Android, combinando o uso de tecnologias mais antigas com recursos mais modernos da plataforma.
 
