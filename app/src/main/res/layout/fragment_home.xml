@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragments.HomeFragment">
 
     <TextView
@@ -48,7 +49,10 @@
         android:id="@+id/btn_minhas_tarefas"
         android:layout_width="290dp"
         android:layout_height="49dp"
+        android:backgroundTint="@color/colorPrimary"
         android:text="@string/btn_minhas_tarefas"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

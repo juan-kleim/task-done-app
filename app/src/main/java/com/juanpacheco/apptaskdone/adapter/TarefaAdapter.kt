@@ -22,11 +22,7 @@ class TarefaAdapter(
     inner class TarefaViewHolder(itemBinding: ItemTarefaBinding)
         : RecyclerView.ViewHolder(itemBinding.root) {
 
-        private val binding: ItemTarefaBinding
-
-        init {
-            binding = itemBinding
-        }
+        private val binding: ItemTarefaBinding = itemBinding
 
         fun bind( tarefa: Tarefa){
             binding.textDescricao.text = tarefa.descricao
