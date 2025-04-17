@@ -2,11 +2,7 @@
 
 ![Task Done App - Apresentação](https://github.com/user-attachments/assets/4d15d57b-1a57-4e6e-b200-7fa0b09987c4)
 
-https://github.com/user-attachments/assets/322c3eb1-5e22-49fd-94f1-5a3742c76a05
-
-https://github.com/user-attachments/assets/322c3eb1-5e22-49fd-94f1-5a3742c76a05
-
-https://github.com/user-attachments/assets/322c3eb1-5e22-49fd-94f1-5a3742c76a05
+https://github.com/user-attachments/assets/322c3eb1-5e22-49fd-94f1-5a3742c76a05 https://github.com/user-attachments/assets/322c3eb1-5e22-49fd-94f1-5a3742c76a05 https://github.com/user-attachments/assets/322c3eb1-5e22-49fd-94f1-5a3742c76a05
 
 
 ## 📖 Sobre o Projeto
