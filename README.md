@@ -37,4 +37,7 @@ Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais de
 
 ---
 💡 *Sinta-se à vontade para contribuir, sugerir melhorias ou reportar problemas!*
+
+---
+
 Obs: todo o projeto foi construído enquanto estudava sobre Android no curso da Udemy: Desenvolvimento Android Completo - Kotlin & Java, por Jamilton Damasceno.
