@@ -12,18 +12,17 @@ O **Task Done App** tem como objetivo ajudar os usuários a se organizarem por m
 ## ✨ Funcionalidades
 - 📋 **Gerenciamento de Tarefas**
   - Criar, editar e excluir tarefas;
-  - Definir datas para execução de tarefas;
-  - Criar espaços, como pastas, para organização.
+  - Armazenar a data e o horário que as tarefas foram criadas;
    
 - ⏰ **Notificações**
-  - Alertas para lembretes de tarefas em datas e horários específicos.
+  - Alertas para lembretes de tarefas em datas e horários específicos (aguardando)
 
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagens**: Java, Kotlin
 - **Interface**: Jetpack Compose
 
 ## 📌 Status do Projeto
-🚀 Em desenvolvimento — funcionalidades básicas em andamento.
+🚀 Em desenvolvimento — funcionalidades básicas finalizadas.
 
 ## 📂 Como Executar o Projeto
 1. Clone este repositório:
