@@ -40,4 +40,4 @@ Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais de
 
 ---
 
-Obs: todo o projeto foi construído enquanto eu estudava sobre Android no curso da Udemy: Desenvolvimento Android Completo - Kotlin & Java, por Jamilton Damasceno.
+Obs: todo o projeto foi construído enquanto eu estudava sobre Android no curso da Udemy: Desenvolvimento Android Completo - Kotlin & Java, por Jamilton Damasceno. Além disso, algumas partes do projeto contém estruturas e códigos fornecidos pelo professor durante o curso para acelerar o processo de desenvolvimento.
